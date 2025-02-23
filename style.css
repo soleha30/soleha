@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ec9a15; /* Soft orange background */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Utama */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    background-color: #eb7e6b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Judul */
+h5 {
+    color: #FF5722;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.table thead {
+    background-color: #FF7043; /* Deep Orange */
+    color: white;
+}
+
+.table tbody tr {
+    transition: 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #FFE0B2; /* Light orange hover */
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #FFA500;
+    border-color: #FFA500;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #FF9800;
+}
+
+.btn-danger {
+    background-color: #FF6347;
+    border-color: #FF6347;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #E53935;
+}
+
+.btn-dark {
+    background-color: #FF8C00;
+    border-color: #FF8C00;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #E65100;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    .card {
+        padding: 15px;
+    }
+}
